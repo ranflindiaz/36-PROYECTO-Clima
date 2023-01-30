@@ -49,7 +49,7 @@
 
  const consultarAPIGeoCode = (ciudad, pais) => {
 
-    const urlGeo = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&appid=${apiId}`;
+    const urlGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&appid=${apiId}`;
 
     fetch(urlGeo)
         .then(response => response.json())
